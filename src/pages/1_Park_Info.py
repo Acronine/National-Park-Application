@@ -3,6 +3,7 @@ import os
 import sys
 from pathlib import Path
 import pandas as pd
+import numpy as np
 
 st.set_page_config(
     page_title="Park Info",
@@ -34,9 +35,10 @@ if select:
 
     for i in range(len(df['full_name'])):
         if select == df['full_name'][i]:
-            link = (df['images'][i][0])
+            link = (df['images'][i])
             index = i
-    st.image(link['url'], caption=link['caption'])
+    ran_num = np.random.randint(0,len(df['images'][index]))
+    st.image(link[ran_num]['url'], caption=link[ran_num]['caption'])
 
     st.subheader('About The Park:')
 
