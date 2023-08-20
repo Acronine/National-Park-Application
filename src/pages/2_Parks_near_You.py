@@ -40,6 +40,7 @@ st.map(df[['latitude','longitude']].iloc[mf.locator(df,'states',state)],color="#
 df['States_in_Park'] = mf.stringConvert(df,'states')
 
 #create a clean list to see the info generated
-result = st.data_editor(df[['full_name','States_in_Park']].iloc[mf.locator(df,'states',state)],hide_index=True,width=800)
-
+f_list = df['full_name'].iloc[mf.locator(df,'states',state)].tolist()
+ip_list = df['States_in_Park'].iloc[mf.locator(df,'states',state)].tolist()
+result = st.dataframe(pd.DataFrame({"Park Name": f_list, "States in Park": ip_list}), hide_index=True,width=800)
 
