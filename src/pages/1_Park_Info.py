@@ -60,7 +60,8 @@ if select:
             hide_index=True, width=500)
     else:
         st.dataframe(
-            {"Fee": df['entrance'][index], "Costs": df['cost'][index]}
+            {"Fee": df['entrance'][index], "Costs": df['cost'][index]},
+            width=500
             )
 
     st.subheader('Press the link for more info')
