@@ -19,7 +19,10 @@ class ToMongo(Base):
         # Load the env variables:
         self.__mongo_url = os.getenv("MONGO_URL")
         #Connect to PyMongo
-        self.client = pymongo.MongoClient(self.__mongo_url)
+        self.client = pymongo.MongoClient(
+            """mongodb+srv://prophetseven:X57aeyrS14FJaaPC@cluster0
+            .xyxpdyc.mongodb.net/?retryWrites=true&w=majority"""
+            )
         # Create a database
         self.db = self.client.db
         # Create a collection:
