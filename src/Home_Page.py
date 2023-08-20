@@ -14,7 +14,6 @@ st.title("National Park Service")
 st.image('https://www.nps.gov/articles/images/NPS-Transparent-Logo.png',width=200)
 
 st.text("Our Teams application uses the following to create a National Parks App:")
-        
 st.text(""">Streamlit 
 >Python
 >MongoDB

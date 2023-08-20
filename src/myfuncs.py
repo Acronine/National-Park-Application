@@ -1,5 +1,5 @@
 #search for records with values that contain val
-def locator (df,col,val):
+def locator(df, col, val):
     '''
     This is used a function to create unique
     filters to return all records where a column
@@ -45,7 +45,7 @@ def stringConvert (df,col):
     and is useful for creating string dummy columns
     that play nice for streamlit in there crisp dataframe box
     '''
-    a_list=[]
+    a_list = []
     for i in range(len(df[col])):
         if type(df[col].iloc[i])==list:
             a_list.append(', '.join(j for j in df[col].iloc[i]))
@@ -53,9 +53,11 @@ def stringConvert (df,col):
             a_list.append(str(df[col].iloc[i]))
     #return the list of locations to be used as a .iloc filter
     return a_list
- 
+
 def hour_sort(list):
-    h_dict={"monday":'',"tuesday":'',"wednesday":'',"thursday":'',"friday":'',"saturday":'',"sunday":''}   
+    h_dict = {
+        "monday": '',"tuesday": '', "wednesday": '', "thursday": '', "friday": '', "saturday": '', "sunday": ''
+        }   
     try:
         for j in list.keys():
             h_dict[j]=list[j]
