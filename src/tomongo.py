@@ -19,7 +19,7 @@ class ToMongo(Base):
         load_dotenv()
         self.user = __user
         self.password = __password
-        self.__mongo_url = f"mongodb+srv://prophetseven:{__password}@cluster0.xyxpdyc.mongodb.net/?retryWrites=true&w=majority"
+        self.__mongo_url = "mongodb+srv://prophetseven:X57aeyrS14FJaaPC@cluster0.xyxpdyc.mongodb.net/?retryWrites=true&w=majority"
         #Connect to PyMongo
         self.client = pymongo.MongoClient(self.__mongo_url)
         # Create a database
