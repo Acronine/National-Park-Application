@@ -1,11 +1,14 @@
 import streamlit as st
+
 st.set_page_config(
     page_title="Summary Page",
     page_icon="⛰️",
     menu_items={
-        'About': """This is an app developed by 5 Peers at Coding Temple. Here are our
-        Github accounts: \n\rHarrison : https://github.com/Acronine, \n\rJoshua : https://github.com/TechNTalk,
-        \n\rLogan : https://github.com/Sir-Roe, \n\rVaidic: https://github.com/tvaidic"""}
+        'About': """This is an app developed by 5 Peers at Coding Temple.
+        Here are our Github accounts: \n\rHarrison :
+        https://github.com/Acronine, \n\rJoshua : https://github.com/TechNTalk,
+        \n\rLogan : https://github.com/Sir-Roe,
+        \n\rVaidic: https://github.com/tvaidic"""}
 )
 
 st.header("National Park's Application Summary")

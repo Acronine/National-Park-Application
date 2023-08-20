@@ -8,7 +8,7 @@ def locator(df, col, val):
     '''
     a_list=[]
     for i in range(len(df[col])):
-        if type(df[col].iloc[i])==list:
+        if type(df[col].iloc[i]) == list:
             if val in df[col].iloc[i]:
                 a_list.append(i)
         else:
@@ -19,13 +19,13 @@ def locator(df, col, val):
 
 #create a list of unique possible values based on a column
 #with lists or not
-def pos_values(df,col):
+def pos_values(df, col):
     '''
     This will reveal to you all relevant or possible values
     from a data frame (a distinct function) for cols with lists
     and non list items mixed.
     '''
-    p_list=[]
+    p_list = []
     for i in range(len(df[col])):
         if type(df[col].iloc[i])==list:
             s=df[col].iloc[i]
@@ -34,7 +34,7 @@ def pos_values(df,col):
         else:
             p_list.append(df[col].loc[i])
             
-    p_list=list(set(p_list))
+    p_list = list(set(p_list))
     p_list.sort()
     return p_list
 
