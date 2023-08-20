@@ -20,8 +20,7 @@ class ToMongo(Base):
         self.__mongo_url = os.getenv("MONGO_URL")
         #Connect to PyMongo
         self.client = pymongo.MongoClient(
-            """mongodb+srv://prophetseven:X57aeyrS14FJaaPC@cluster0
-            .xyxpdyc.mongodb.net/?retryWrites=true&w=majority"""
+            """mongodb+srv://prophetseven:X57aeyrS14FJaaPC@cluster0.xyxpdyc.mongodb.net/?retryWrites=true&w=majority"""
             )
         # Create a database
         self.db = self.client.db
