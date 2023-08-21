@@ -8,7 +8,8 @@ st.set_page_config(
         Here are our Github accounts: \n\rHarrison :
         https://github.com/Acronine, \n\rJoshua : https://github.com/TechNTalk,
         \n\rLogan : https://github.com/Sir-Roe,
-        \n\rVaidic: https://github.com/tvaidic"""}
+        \n\rVaidic : https://github.com/tvaidic
+        \n\rSam : """}
 )
 
 st.title("National Park Service")

@@ -37,7 +37,7 @@ if select:
         if select == df['full_name'][i]:
             link = (df['images'][i])
             index = i
-    ran_num = np.random.randint(0,len(df['images'][index]))
+    ran_num = np.random.randint(0, len(df['images'][index]))
     st.image(link[ran_num]['url'], caption=link[ran_num]['caption'])
 
     st.subheader('About The Park:')
