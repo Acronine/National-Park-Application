@@ -7,9 +7,9 @@ import numpy as np
 
 load_dotenv()
 class Base:
-    
+
     __key = os.getenv("KEY")
-    
+
     def __init__(self):
         self.api_url = "https://developer.nps.gov/api/v1/parks?limit=500"
         
